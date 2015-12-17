@@ -2,6 +2,11 @@
 require 'sinatra'
 
 
-get '/Home'
+get '/home' do
+	"Hello World"
     erb :home
+end
+
+get '/contact' do
+	erb :contact
 end

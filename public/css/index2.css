@@ -1,0 +1,14 @@
+.first {
+	text-align: center;
+}
+.contact {
+	float: right;
+	padding-right: 300px;
+	/*border: 2px solid green;*/
+}
+form {
+	padding-left: 300px; 
+	float: left;
+	/*border: 2px solid blue;
+	/*text-align: center;*/
+}
