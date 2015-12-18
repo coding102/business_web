@@ -1,44 +1,46 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>tab title</title>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="javascript/index.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-    </head>
-	
-		  <body>
-        
+
+<head>
+    
+    <meta charset="utf-8">
+    <title>tab title</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="javascript/jquery.simple-text-rotator.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/simpletextrotator.css">
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    
+</head>
+
+<body>
+    
     <div id="main">
         
-        
-        <div id="header">
-        
-        
-        </div><!--end header -->
-        
-        
-        
-      
-        <div id="nav">
+        <div id="container">
+            
+            <video autoplay loop class="bg-video">
+		              <source src="images/bar.mp4" type="video/mp4">
+	           </video>
+            
+            <p id="text">
+                <span class="rotate">Something for Everyone, Something, for, Everyone</span>
+            </p>
+            
+        </div>
     
+ 
+
         
-        </div><!--end nav-->
-        
-        
-        
-            
-        <div id="content">
-        
-        
-        </div><!--end content-->
-        
-        
-            
-        
+        <script>
+            $(".rotate").textrotator({
+            animation: "dissolve", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+            separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+            speed: 2000 // How many milliseconds until the next word show.
+        });
+    </script>
+
     </div><!--end main-->
-    
-    </body>
-    	
+
+</body>
+
 </html>
