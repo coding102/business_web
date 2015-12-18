@@ -7,6 +7,10 @@ get '/home' do
     erb :home
 end
 
+post '/sign-in' do
+  "Hello World"
+end
+
 get '/contact' do
 	erb :contact
 end
