@@ -1,61 +1,55 @@
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+html, body {
+  height: 100%;
 }
 
-#container {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    padding:0;
-    margin:0;
-    left: 0px;
-    top: 0px;
-    z-index: -1000;
-    overflow:hidden;
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.block-container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.block-container > .block {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 75%;
+}
+
+.block-container > .block > h1 {
+  font-size: 75px;
+  color: #fff;
+  border-bottom: 0;
+  margin: 0 0 10px;
+}
+
+.block-container > .block > h3 {
+  color: #fff;
+  margin: 0;
+  font-size: 32px;
 }
 
 #text {
-    top:0;
-    height:22%;
+    margin-top: 90px;
+    height:55%;
     width: 100%;
     padding-top: 120px;
-    padding-bottom: 50px;
+    padding-bottom: 130px;
     position:absolute;    
     color:white;
-    font-size: 5.9vw;
-    width: 100%;
+    font-size: 9vw;
     text-align: center;
     font-family: 'Poiret One';
-    background-color: rgba(20,188,156,0.65);
-
-.big-video video {
--webkit-transform: translateX(-50%) translateY(-50%);
--moz-transform: translateX(-50%) translateY(-50%);
--ms-transform: translateX(-50%) translateY(-50%);
--o-transform: translateX(-50%) translateY(-50%);
-transform: translateX(-50%) translateY(-50%);
-position: absolute;
-top: 50%;
-left: 50%;
-min-width: 100%;
-min-height: 100%;
-width: auto;
-height: auto;
-z-index: -100;
+    background-color: rgba(20,188,156,0.9);
 }
+
+
+
+
+
