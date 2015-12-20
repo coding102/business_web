@@ -20,10 +20,11 @@
 	background-image: url(http://ww2.kqed.org/bayareabites/wp-content/uploads/sites/24/2013/01/IMG_9515.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
-	display: block;
+	height: 900%;
 	color: white;
    font-family: 'Poiret One';
 }
+
 .bottom {
 	text-align: center;
 	background-color: tomato;
