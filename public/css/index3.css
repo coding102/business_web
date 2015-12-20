@@ -1,0 +1,33 @@
+.appetizers {
+	text-align: center;
+	background-image: url(http://1o3w0o1eiua345ch24hjxcm1.wpengine.netdna-cdn.com/wp-content/uploads/2013/10/KaleButternutSquash.jpg);
+	color: white;
+	background-size: 100%;
+	padding: 50px;
+	display: block;
+   font-family: 'Poiret One';
+}
+.entrees {
+	text-align: center;
+	background-image: url(http://4.bp.blogspot.com/-kJ0pNi-pvIo/UcG6I3XHjMI/AAAAAAAAIJg/zvMITjhqPG0/s1600/seafood+stew+recipe-124.jpg);
+	color: white;
+	height: 100%;
+	display: block;
+   font-family: 'Poiret One';
+}
+.menu {
+	text-align: center;
+	background-image: url(http://ww2.kqed.org/bayareabites/wp-content/uploads/sites/24/2013/01/IMG_9515.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: block;
+	color: white;
+   font-family: 'Poiret One';
+}
+.bottom {
+	text-align: center;
+	background-color: tomato;
+	display: block;
+	color: white;
+   font-family: 'Poiret One';
+}

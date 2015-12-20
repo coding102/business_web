@@ -14,3 +14,8 @@ end
 get '/contact' do
 	erb :contact
 end
+
+get '/food' do
+	erb :food
+
+end
