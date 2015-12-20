@@ -2,7 +2,26 @@
 require 'sinatra'
 
 
-get '/Home' do
+get '/home.erb' do
     erb :home
 end
 
+get '/menu.erb' do
+    erb :menu
+end
+
+get '/events.erb' do
+    erb :events
+end
+
+get '/bar.erb' do
+    erb :bar
+end
+
+get '/contact.erb' do
+    erb :contact
+end
+
+get '/dining.erb' do
+    erb :dining
+end
