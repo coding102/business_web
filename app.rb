@@ -1,5 +1,8 @@
 #create "Gemfile" file, add "gem 'sinatra'", and run bundle install
 require 'sinatra'
+require 'mandrill'
+
+
 
 
 get '/home' do

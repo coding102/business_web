@@ -59,6 +59,28 @@
 		<label for="comments">Comments</label> <br> 
 		<input type="comments" name="comments"><br><br>   
 		<input type="submit"> 
+
+
+		<%= 
+		puts "Entering Mandrill Section"
+		m = Mandrill::API.new
+		name = "Jesus"
+		email = "loljmtorres@gmail.com"
+
+		message = {
+			:subject=> "Hello from the Mandrill API",
+			:from_name=> name,
+			:text=>"Hi, how are you?",
+			:to=>[{:email=> "jesus1421771025@gmail.com", :name=> "Jesus"}],
+			:html=>"<html><h1>Hi <strong>message</strong>, how are you?</h1></html>",
+			:from_email=> email
+			}
+		puts "Sending Mail"
+		sending = m.messages.send message
+		puts sending
+
+		puts "Process Complete"
+		%>
 	</form>
 
 	<div class="banner">
