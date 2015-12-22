@@ -25,3 +25,6 @@ end
 get '/dining.erb' do
     erb :dining
 end
+
+
+configure(:development){set :database, "sqlite3:blog.sqlite3"}
