@@ -22,3 +22,19 @@ get '/food' do
 	erb :food
 
 end
+
+get '/menu' do
+    erb :menu
+end
+
+get '/events' do
+    erb :events
+end
+
+get '/bar' do
+    erb :bar
+end
+
+get '/dining' do
+    erb :dining
+end
