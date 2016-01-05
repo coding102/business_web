@@ -11,8 +11,10 @@
     <link rel="stylesheet" type="text/css" href="css/simpletextrotator.css">
     <script src="javascript/vidbg.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/icons.css" />
-          <link rel="stylesheet" type="text/css" href="css/style3.css" />
-          <script src="javascript/modernizr.custom.js"></script>
+    <script src="javascript/borderMenu.js"></script>
+    <script src="javascript/classie.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style3.css" />
+    <script src="javascript/modernizr.custom.js"></script>
     
 </head>tes
 
@@ -24,20 +26,19 @@
     
     
         <div class="container">
+			         <nav id="bt-menu" class="bt-menu">
+				        <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+				            <ul>
+					               <li><a href="Home" class="bt-icon icon-user-outline">Home</a></li>
+					               <li><a href="menu.erb" class="bt-icon icon-sun">Menu</a></li>
+					               <li><a href="events.erb" class="bt-icon icon-windows">Events</a></li>
+					               <li><a href="bar.erb" class="bt-icon icon-speaker">Bar</a></li>
+					               <li><a href="dining.erb" class="bt-icon icon-star">Dining</a></li>
+					               <li><a href="contact.erb" class="bt-icon icon-bubble">Contact</a></li>
+				            </ul>
+			         </nav>
             
-                     <nav id="bt-menu" class="bt-menu">
-                        <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
-                            <ul>
-                                   <li><a href="Home" class="bt-icon icon-user-outline">Home</a></li>
-                                   <li><a href="menu.erb" class="bt-icon icon-sun">Menu</a></li>
-                                   <li><a href="events.erb" class="bt-icon icon-windows">Events</a></li>
-                                   <li><a href="bar.erb" class="bt-icon icon-speaker">Bar</a></li>
-                                   <li><a href="dining.erb" class="bt-icon icon-star">Dining</a></li>
-                                   <li><a href="contact.erb" class="bt-icon icon-bubble">Contact</a></li>
-                            </ul>
-                     </nav>
-            
-              </div><!-- /container -->    
+		      </div><!-- /container -->
     
     
         <script>
@@ -70,8 +71,4 @@
     <script src="javascript/vidbg.js"></script>
 
 </body>
-    
-    <script src="javascript/classie.js"></script>
-       <script src="javascript/borderMenu.js"></script>
-    
 </html>
