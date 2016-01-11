@@ -1,9 +1,8 @@
 
 source 'http://rubygems.org'
-ruby '2.2.1'
-
-
 gem 'sinatra'
+
+
 
 
 group :development do        
@@ -13,3 +12,5 @@ end
 group :production do         
     gem 'pg'   
 end
+
+gem 'sendgrid-ruby'
