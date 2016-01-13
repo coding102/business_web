@@ -2,6 +2,7 @@
 require 'sinatra'
 require 'mandrill'
 
+
 configure(:development){set :database, "sqlite3:blog.sqlite3"}
 
 
@@ -16,6 +17,23 @@ end
 
 get '/contact' do
 	erb :contact
+end
+
+post '/email-request' do
+
+	require 'mandrill'
+	m = Mandrill::API.new
+	message = {
+	:subject=> "Hello from the Mandrill API",
+	:from_name=> "Your name",
+	:text=>"How are you?",
+	:to=>[{:email=> "loljmtorres@gmail.com", :name=> "Person"}],
+	:html=>"<html><h1>Hi <strong>message</strong>, how are you?</h1></html>",
+	:from_email=>"loljmtorres@gmail.com"
+	}
+
+	erb :contact
+
 end
 
 get '/food' do

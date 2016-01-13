@@ -1,10 +1,6 @@
 
-source 'http://rubygems.org'
-ruby '2.2.1'
-
-
+source 'https://rubygems.org'
 gem 'sinatra'
-gem 'geolocater'
 gem 'mandrill-api'
 
 group :development do 
