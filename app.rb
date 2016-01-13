@@ -3,6 +3,28 @@ require 'sinatra'
 require 'sendgrid-ruby'
 
 
+configure(:development){set :database, "sqlite3:blog.sqlite3"}
+
+
+# post '/email-request' do
+
+# 	require 'mandrill'
+# 	m = Mandrill::API.new
+# 	message = {
+# 	:subject=> "Hello from the Mandrill API",
+# 	:from_name=> "Your name",
+# 	:text=>"How are you?",
+# 	:to=>[{:email=> "loljmtorres@gmail.com", :name=> "Person"}],
+# 	:html=>"<html><h1>Hi <strong>message</strong>, how are you?</h1></html>",
+# 	:from_email=>"loljmtorres@gmail.com"
+# 	}
+
+# 	erb :contact
+
+# end
+
+
+
 
 get '/home' do
     erb :home
@@ -62,10 +84,9 @@ get '/dining' do
     erb :dining
 end
 
+get '/bar' do
+    erb :bar
+end
 
 
 
-
-
-
-configure(:development){set :database, "sqlite3:blog.sqlite3"}

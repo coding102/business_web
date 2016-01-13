@@ -1,14 +1,43 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
+	<link rel="shortcut icon" type="image/png" href="https://iweg.s3.amazonaws.com/public/uploads/organization/image/3/IWEG_FINAL_FILES_Favicon.png"/>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <meta charset="utf-8">
-    <title>Demo</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <title>Contact - Time Restaurant</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="javascript/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index2.css">
     <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-		  <link rel="stylesheet" type="text/css" href="css/style3-4.css" />
-     
-  </head>
+    <link rel="stylesheet" href="css/navigation.css">
+    <script src="javascript/navigation.js"></script>
+</head>
+<body>
 
+<<<<<<< HEAD
+	<!-- navigation start -->
+
+	<div class="parent2">
+	  <div class="test1"><i class="fa fa-home"></i></div>
+	  <div class="test2"><i class="fa fa-facebook-official"></i></div>
+	  <div class="test3"><i class="fa fa-code fa-2x"></i></div>
+	  <div class="test4"><i class="fa fa-envelope-o fa-2x"></i></div>
+	  <div class="mask2"><i class="fa fa-home fa-3x"></i></div>
+	</div>
+	<!-- navigation end -->
+	
+	<i class="fa fa-battery-empty"></i>
+
+
+
+	<h4 id="top">Please contact us with any
+		questions, comments or to plan your next event.
+	</h4>
+
+	<!-- <h4 class="first">
+		
+	</h4> -->
+=======
   <body>
       
       
@@ -66,13 +95,56 @@
 			         </nav>
             
 		      </div><!-- /container -->    
+>>>>>>> 91a9960657c34a8c3a372198343dd672916f85f6
 
-        
-        <script src="javascript/vidbg.js"></script>    
-            
+	<div class="contact">
+		<h3>Offic Hours</h3>
+		<h4>Mon-Sun 5pm-2am</h4>
+		<h3>Contact Us</h3>
+		<h4>215-985-4800</h4>
+		<h3>Address</h3>
+		<h4>1315 Sansom St, Philadelphia, PA 19107</h4>
+		<h4>Email Us</h4>
+		<h3>tim@timerestaurant.net</h3>
+	</div>
+
+	<form method="POST" action="/sign-in">   
+		<label for="name">Name</label> <br> 
+		<input type="text" name="name"> 
+		<br>  
+		<label for="company">Company</label> <br>
+		<input type="company" name="company"> <br>
+		<label for="email">Email</label> <br>
+		<input type="email" name="email"> <br>
+		<label for="comments">Comments</label> <br> 
+		<input type="comments" name="comments"><br><br>   
+		<input type="submit"> 
+
+
+		<%= 
+		puts "Entering Mandrill Section"
+		m = Mandrill::API.new
+		name = "Jesus"
+		email = "loljmtorres@gmail.com"
+
+		message = {
+			:subject=> "Hello from the Mandrill API",
+			:from_name=> name,
+			:text=>"Hi, how are you?",
+			:to=>[{:email=> "jesus1421771025@gmail.com", :name=> "Jesus"}],
+			:html=>"<html><h1>Hi <strong>message</strong>, how are you?</h1></html>",
+			:from_email=> email
+			}
+		puts "Sending Mail"
+		sending = m.messages.send message
+		puts sending
+
+		puts "Process Complete"
+		%>
+	</form>
+
+	<div class="banner">
+	</div>	
+
+
 </body>
-    
-    <script src="javascript/classie.js"></script>
-	   <script src="javascript/borderMenu.js"></script>
-    
-</html>
