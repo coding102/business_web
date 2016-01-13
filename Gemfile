@@ -1,12 +1,13 @@
 
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 gem 'sinatra'
-gem 'mandrill-api'
 
 group :development do 
 	gem 'sqlite3'   
 end   
-group :production do 
-	gem 'pg'   
 
+group :production do         
+    gem 'pg'   
 end
+
+gem 'sendgrid-ruby'
